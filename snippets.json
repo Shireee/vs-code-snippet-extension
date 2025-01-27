@@ -1,0 +1,7 @@
+{
+  "test": {
+    "prefix": ["tt"],
+    "body": "${1|one,two,three|}",
+    "description": "test desc"
+  }
+}
