@@ -1,0 +1,13 @@
+{
+  "icex": {
+    "prefix": ["iex"],
+    "body": ["export { ${1:Component} } from '.${1:/}';"],
+    "description": "Component export from index snippet"
+  },
+
+  "iaex": {
+    "prefix": ["iaex", "iallexport"],
+    "body": ["export * from './${1:folder}';"],
+    "description": "Export all from index snippet"
+  }
+}

@@ -2,7 +2,7 @@
   "name": "shireee-react-snippets",
   "displayName": "shireee-react-snippets",
   "description": "Snippets for self usage.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.96.0"
   },
@@ -12,6 +12,14 @@
     "name": "Vladimir Bagdeev",
     "email": "kirog11az@gmail.com",
     "url": "https://github.com/Shireee"
+  },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/Shireee/vs-code-snippet-extension"
+  },
+  "bugs": {
+    "url": "https://github.com/Shireee/vs-code-snippet-extension/issues",
+    "email": "kirog11az@gmail.com"
   },
   "pricing": "Free",
   "keywords": [
@@ -27,7 +35,11 @@
     "snippets": [
       {
         "language": "typescript",
-        "path": "./snippets.json"
+        "path": "./src/snippets-ts.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./src/snippets-react-ts.json"
       }
     ]
   },
