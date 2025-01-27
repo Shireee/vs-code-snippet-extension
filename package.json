@@ -13,6 +13,14 @@
     "email": "kirog11az@gmail.com",
     "url": "https://github.com/Shireee"
   },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/Shireee/vs-code-snippet-extension"
+  },
+  "bugs": {
+    "url": "https://github.com/Shireee/vs-code-snippet-extension/issues",
+    "email": "kirog11az@gmail.com"
+  },
   "pricing": "Free",
   "keywords": [
     "react",
@@ -21,13 +29,16 @@
   "categories": [
     "Snippets"
   ],
-  "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
     "snippets": [
       {
         "language": "typescript",
-        "path": "./snippets.json"
+        "path": "./src/snippets-ts.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./src/snippets-react-ts.json"
       }
     ]
   },

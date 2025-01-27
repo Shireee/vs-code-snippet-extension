@@ -1,0 +1,45 @@
+{
+  "useState": {
+    "prefix": ["uss", "useState"],
+    "body": [
+      "const [${1:state}, set${1/^(.)(.*)$/${1:/upcase}${2}/}] = useState<${2:Type}>(${3:InitState});"
+    ],
+    "description": "useState snippet"
+  },
+
+  "sfc": {
+    "prefix": ["sfc"],
+    "body": ["export const ${1:Component}: React.FC = () => {\n  return <></>; \n};"],
+    "description": "stateless functional component snippet"
+  },
+
+  "ifcp": {
+    "prefix": ["isfc"],
+    "body": [
+      "interface ${1:Component}Props {}\n\nexport const ${1:Component}: React.FC<${1:Component}Props>= () => {\n  return <>${2}</>; \n};"
+    ],
+    "description": "stateless functional component snippet with interface"
+  },
+
+  "handle": {
+    "prefix": ["handle"],
+    "body": ["const handle${1:Event} = (${2:args}) => {\n  /*${3:statement}*/\n};"],
+    "description": "handler snippet"
+  },
+
+  "funMutate": {
+    "prefix": ["funm", "funMutate"],
+    "body": [
+      "import { useMutation } from '@tanstack/react-query';\n\nexport function use${1:Action}() {\n  return useMutation({\n\t\tmutationKey: [${2:'MutationQueryKey'}],\n\t\tmutationFn: (${3:/*props*/}) => {\n\t\t\t${4:/*statement*/}\n\t\t},\n\t\tonSuccess: () => {\n\t\t\tqueryClient.invalidateQueries({ queryKey: [${5:'QueryKey'}] });\n \t\t},\n  });\n}"
+    ],
+    "description": "functional Tanstack query component"
+  },
+
+  "funQuery": {
+    "prefix": ["funq", "funQuery"],
+    "body": [
+      "import { useQuery } from '@tanstack/react-query';\n\nexport function use${1:Action}(${2:/*props*/}) {\n  return useQuery({\n\t\tqueryKey: [${3:'QueryKey'}],\n\t\tqueryFn: () => {\n\t\t\t${4:/*statement*/}\n\t\t},\n\t});\n}"
+    ],
+    "description": "functional Tanstack query component"
+  }
+}
