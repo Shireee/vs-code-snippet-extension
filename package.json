@@ -1,8 +1,8 @@
 {
-  "name": "shireee-react-snippets",
-  "displayName": "shireee-react-snippets",
-  "description": "Snippets for self usage.",
-  "version": "0.0.2",
+  "name": "shireee-react-utils",
+  "displayName": "shireee-react-utils",
+  "description": "Utility for react developers.",
+  "version": "0.1.3",
   "engines": {
     "vscode": "^1.96.0"
   },
@@ -27,7 +27,8 @@
     "react snippets"
   ],
   "categories": [
-    "Snippets"
+    "Snippets",
+    "Keymaps"
   ],
   "activationEvents": [],
   "main": "./dist/extension.js",
@@ -40,6 +41,19 @@
       {
         "language": "typescriptreact",
         "path": "./src/snippets-react-ts.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "shireee.generateIndex.ts",
+        "title": "Generate index.ts"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "shireee.generateIndex.ts",
+        "key": "ctrl+shift+\\",
+        "when": "editorTextFocus"
       }
     ]
   },
