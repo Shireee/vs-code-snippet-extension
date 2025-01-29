@@ -1,5 +1,5 @@
 {
-  "icex": {
+  "iex": {
     "prefix": ["iex"],
     "body": ["export { ${1:Component} } from '.${1:/}';"],
     "description": "Component export from index snippet"
