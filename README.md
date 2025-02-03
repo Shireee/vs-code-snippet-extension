@@ -3,7 +3,9 @@
 Extension provide two features:
 
 1. Generate `index.ts` file
-2. Snippets for react/ts/tanstack-query
+2. Generate component folder template
+3. Snippets for react/ts/tanstack-query
+
 
 ## Generate index.ts
 
@@ -15,10 +17,16 @@ This feature generate `index.ts` in same directoryt with export statement based 
 export { MyComponent } from './MyComponent';
 ```
 
-Run:
+`ctrl+shift+\` - keybinding to generate index.ts
 
-1. Press `ctrl+shift+\` - keybinding
-2. Run `shireee.generateIndex.ts` - Command Palette
+## Generate component folder template
+
+There are new option in explorer folder menu ```Generate component template```:
+
+![alt text](public/generate_component_folder-1.png)
+
+Witch will generate follow stucture:
+![alt text](public/generate_component_folder-2.png)
 
 ## Snippets
 
