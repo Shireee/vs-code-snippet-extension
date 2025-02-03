@@ -26,6 +26,7 @@ There are new option in explorer folder menu ```Generate component template```:
 ![alt text](public/generate_component_folder-1.png)
 
 Witch will generate follow stucture:
+
 ![alt text](public/generate_component_folder-2.png)
 
 ## Snippets
